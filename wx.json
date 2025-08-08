@@ -1,0 +1,22 @@
+{
+  "id": "local-wx-reward",
+  "name": "本地规则 - 微信激励视频领取",
+  "author": "GKD助手",
+  "version": 1,
+  "groups": [
+    {
+      "key": "wx_reward_group",
+      "name": "微信小程序激励视频广告",
+      "desc": "广告播放结束 30 秒后点击领取奖励按钮",
+      "rules": [
+        {
+          "action": "click",
+          "selector": "android.widget.FrameLayout[vid=\"a0o\"]",
+          "delay": 30000,
+          "activityId": "com.tencent.mm.plugin.appbrand.ui.AppBrandUI1",
+          "persistent": false
+        }
+      ]
+    }
+  ]
+}
